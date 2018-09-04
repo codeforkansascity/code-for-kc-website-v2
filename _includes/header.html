@@ -1,0 +1,56 @@
+<!-- Header -->
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
+  <img src="{{ site.baseurl }}/images/CodeForKC_Logo-01.png" height="60" width="auto" style="margin-top: -5px;">
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <!-- {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% endif %}
+            {% endfor %} -->
+            
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="#project">Delivered Projects</a></li>
+            <li><a href="#">Events</a>
+              <ol>
+                <li><a href="/hackkc">Hack KC 2018</a></li>
+                <li><a href="http://www.meetup.com/kcbrigade/">Weekly Meetups</a></li>
+              </ol>
+            </li>
+            <li><a href="#">Past Events</a>
+              <ol>
+                  <li><a href="{{ site.baseurl }}/Report-Out-Recruitment-2016">Report Out and Recruitment</a></li>
+                  <li><a href="{{ site.baseurl }}/hackkc2016">HackKC 2016</a></li>
+                  <li><a href="http://www.kcdigitaldrive.org/article/code-across-kc-hacking-for-a-healthier-community/" target="_blank">Code Across KC 2016</a></li>
+                  <li><a href="{{ site.baseurl }}/codeacross2016">CodeAcross</a></li>
+                  <li><a href="http://www.kcdigitaldrive.org/project/hack-kansas-city-the-national-day-of-civic-hacking/" target="_blank">HackKC 2015</a></li>   
+              </ol>
+            </li>
+              
+            <li><a href="#"> FAQ</a>
+              <ol>
+                  <li><a href="{{ site.baseurl }}/welcome">Welcome/Resources</a></li>
+                  <li><a href="/hackkc-code-of-conduct">Code of Conduct</a></li>
+                  <li><a href="http://www.kcdigitaldrive.org/article/tech-volunteers-needed-grow-your-tech-skills-and-help-your-neighbors-at-code-for-kc/" target="_blank">Tech Volunteers Needed</a></li>
+                  <li><a href="http://www.kcdigitaldrive.org/article/get-your-community-websites-apps-tested-by-kcs-first-civic-ux-group/" target="_blank">KC Civic UX Group</a></li>
+              </ol>
+            </li>
+
+            <li><a href="#">News</a>
+              <ol>
+                <li><a href="blog-single.html">article post</a></li>
+              </ol>
+            </li>
+            <li><a href="https://docs.google.com/forms/d/1mRZJld_CPvCcS-WxhI3aDNRO9Fkpm0zK8dlpczG5i_4/viewform?c=0&w=1" target="_blank">Contact</a>
+
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>

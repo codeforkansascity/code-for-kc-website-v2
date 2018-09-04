@@ -1,0 +1,280 @@
+---
+layout: default
+title: HACK KANSAS CITY - 2018
+excerpt: Hack, Learn, Make Something Good #HACKKC
+is_nocd_2015: true
+custom_css:
+- hackkc2018
+custom_js:
+- tabletop
+- showdown
+- ndoch-2018
+---
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDQNzkJUiUJBqI_pex-Xe9_1JD4sf2KZS8&sensor=false&extension=.js'></script>
+
+<script>
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(39.0929229, -94.5860675),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable: false,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('umkc-map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+            ['Plexpod Crossroads', 'Think Big Partners', 'undefined', 'undefined', 'undefined', 39.0929115, -94.5860336, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] == 'undefined') {
+                description = '';
+            } else {
+                description = locations[i][1];
+            }
+            if (locations[i][2] == 'undefined') {
+                telephone = '';
+            } else {
+                telephone = locations[i][2];
+            }
+            if (locations[i][3] == 'undefined') {
+                email = '';
+            } else {
+                email = locations[i][3];
+            }
+            if (locations[i][4] == 'undefined') {
+                web = '';
+            } else {
+                web = locations[i][4];
+            }
+            if (locations[i][7] == 'undefined') {
+                markericon = '';
+            } else {
+                markericon = locations[i][7];
+            }
+            var marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+            link = '';
+        }
+
+    }
+</script>
+<style>
+    #umkc-map {
+        flex: 1;
+        flex-basis: 15em;
+    }
+</style>
+<div class="hero">
+    <div class="container">
+        <img class="responsive-img" src="../images/civic_hacking_logo_two.png" width="600"/>
+        <p class="hero-event-date">
+            <span>August 11, 2018<br>Discovery & Design Workshop for Hack KC</span>
+            <!-- <a href="#">#hackKC</a>
+            <a href="#">@codeforkc</a> -->
+        </p>
+
+        <div class="button-center">
+            <a href="https://www.eventbrite.com/e/discovery-design-workshop-for-hack-kc-tickets-47030752246"
+               class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register for the Discovery & Design Workshop</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqvOEjX_cfVS77n1ZK34DOCi5PJbdMJVT4kYiDjTPvqcSPWw/viewform?c=0&w=1&includes_info_params=true"
+               class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit a Project</a>
+        </div>
+    </div>
+
+</div>
+<div id="learnDiv" class="content-panel">
+    <q>Join Code for KC to develop tech for good! </q>
+
+    <div class="container">
+
+        <p>Do you have a community-oriented idea that might benefit from a tech solution? Do you like to lend your
+            skills to help people bring their ideas to life? Then this Discovery and Design Workshop (on the National
+            Day of Civic Hacking) is for you—yes, you! Anyone can participate, and you don’t have to be an expert in
+            technology.</p>
+        <p>This FREE event brings together people with the passion for doing good to collaborate in developing
+            technology solutions that help others. Nonprofit professionals, urbanists, civic hackers, government staff,
+            developers, designers, project managers, community organizers and more are welcomed!</p>
+        <ul>
+            <li>9:00-9:30 | Welcome and Overview
+
+            <li>9:30-11:30 | Ideation, Asset, and Project Brainstorming
+
+            <li>11:30-12:30 | Lunch
+
+            <li>12:30-2:30 | Project Refinement and Solution Work
+
+            <li>2:30-5:00 | Next Steps (and Start Hacking)
+        </ul>
+
+
+        <p>Project ideas developed at the event will go through additional development and preparation to participate in
+            HackKC on October 13-14. <a href="https://www.eventbrite.com/e/hack-kc-2018-tickets-47997788678">Register
+                here for Hack KC</a></p>
+    </div>
+    <q>
+        Change only happens when ordinary people get involved!
+    </q>
+</div>
+<div class="content-panel projects">
+    <h3 class="content-panel-header">What is the Kansas City Code Brigade?</h3><br>
+    <div class="container">
+        <img id="codeForKCLogo" class="logos" src="{{site.baseurl}}/images/codeforkclogo.jpg" width="450">
+        <br>
+        <p>
+            Code for KC is a program of KC Digital Drive, and an affiliate of the national Code for America Brigade network. We work on civic tech projects throughout the year at our weekly Monday night hack nights. Hack KC is an annual hackathon that serves as a kickoff event for many of our projects. Unlike a typical weekend hackathon, our program is less about what can be built in a weekend or who can build the best or fastest, and more about what we can build to benefit the community.
+        </p>
+    </div>
+</div>
+<div class="content-panel event-info">
+    <div class="container event-info-container">
+        <div class="event-details">
+            <h3>Dates</h3>
+            <p>August 11, 2018<br/>9:00 AM - 4:30 PM
+            <p>
+            <h3>Location</h3>
+            <address>
+                Plexpod Crossroads<br/>
+                1712 Main St.<br/>
+                Kansas City, MO 64108
+            </address>
+        </div>
+        <div id='umkc-map'></div>
+    </div>
+</div>
+<div class="content-panel attendee-profiles">
+    <h3 class="content-panel-header">How can I help?</h3>
+    <div class="attendee-profiles-container">
+        <figure>
+            <img class="interactive-tooltip"
+                 title="We want to know who we’re coding for! Help us reach our residents, understand their needs. Connect us to partner groups and individual volunteers."
+                 src="{{ site.baseurl }}/images/community_organizers.svg"/>
+            <figcaption>Community Organizers</figcaption>
+        </figure>
+        <figure>
+            <img class="interactive-tooltip"
+                 title="We love government partners. No one does a better job connecting us to the city’s existing resources. We welcome staff to collaborate with us on development projects and connecting to users across the KC Metro area."
+                 src="{{ site.baseurl }}/images/ndoch_2017_government.svg"/>
+            <figcaption>Government Officials</figcaption>
+        </figure>
+        <figure>
+            <img class="interactive-tooltip"
+                 title="Building tools that are well-made, user friendly, and aesthetically pleasing is important to us, but we need help! Graphic Designers, UX Designers, HCI Designers… we welcome you all!"
+                 src="{{ site.baseurl }}/images/ndoch_2017_designers.svg"/>
+            <figcaption>Designers</figcaption>
+        </figure>
+        <figure>
+            <img class="interactive-tooltip"
+                 title="We need people who know how to code and build usable tech. It’s the core of what we do. We’re constantly improving our network of local experts from all programming languages and backgrounds, to make us more effective, efficient, and flexible."
+                 src="{{ site.baseurl }}/images/ndoch_2017_hackers.svg"/>
+            <figcaption>Hackers</figcaption>
+        </figure>
+        <figure>
+            <img class="interactive-tooltip"
+                 title="We want to work with our city, and for our city. You can help us connect to local resources, identify areas of need, and troubleshoot our solutions. Help us figure out what fits into KC."
+                 src="{{ site.baseurl }}/images/ndoch_2017_urbanists.svg"/>
+            <figcaption>Urbanists</figcaption>
+        </figure>
+        <figure>
+            <img class="interactive-tooltip"
+                 title="We build things for Kansas City to use, and we need people to tell us how we’re doing. User testing and feedback help us improve, and you don’t need a technical background to do it!<br/><br/>We also need greeters and assistants for the event to keep everything on schedule and running smoothly."
+                 src="{{ site.baseurl }}/images/ndoch_2017_public.svg"/>
+            <figcaption>Public</figcaption>
+        </figure>
+    </div>
+</div>
+<div class="content-panel projects">
+    <div class="container">
+        <h3 class="content-panel-header">Projects</h3>
+        <div class="button-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqvOEjX_cfVS77n1ZK34DOCi5PJbdMJVT4kYiDjTPvqcSPWw/viewform?c=0&w=1&includes_info_params=true"
+               class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit a Project</a>
+        </div>
+        <div id="projects" class="projects-container"></div>
+    </div>
+</div>
+<div class="content-panel sponsors">
+    <div class="container">
+        <h3 class="content-panel-header">Sponsors</h3>
+        <div class="sponsors-container">
+            <a class="logos" href="http://thinkbigcoworking.com/" target="_blank">
+                <img src="{{ site.baseurl }}/images/ThinkBigCoworking.png" width="200"/>
+            </a>
+            <a class="logos" href="https://fiber.google.com" target="_blank">
+                <img src="{{ site.baseurl }}/images/google-fiber.png" width="200"/>
+            </a>
+            <a class="logos" href="http://www.polsinelli.com/" target="_blank">
+                <img src="{{ site.baseurl }}/images/Polsinelli_Color_logo.jpg" width="200"/>
+            </a>
+            <a class="logos" href="http://www.kcdigitaldrive.org/" target="_blank">
+                <img src="{{ site.baseurl }}/images/kcdd-logo.png" width="200"/>
+            </a>
+            <a class="logos" href="http://codeforkc.org/" target="_blank">
+                <img src="{{ site.baseurl }}/images/CodeForKC_Logo-01.png" width="200"/>
+            </a>
+            <a class="logos" href="https://www.cerner.com/" target="_blank">
+                <img src="{{ site.baseurl }}/images/Cerner-Corporation-logo.png" width="200" />
+            </a>
+            <a class="logos" href="https://www.plexpod.com/" target="_blank">
+                <img src="{{ site.baseurl }}/images/plexpod_logo.png" width="200" />
+            </a>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<div class="content-panel supporters">
+    <div class="container">
+        <h3 class="content-panel-header">Supporters</h3>
+        <div class="sponsors-container">
+            <a class="logos" href="http://law.umkc.edu/" target="_blank">
+                <img src="{{ site.baseurl }}/images/umkc-law-stack_web_400px.jpg" width="200" />
+            </a>
+            <a class="logos" href="http://www.kcmolandbank.org/" target="_blank">
+                <img src="{{ site.baseurl }}/images/land_bank_logo.png" width="200" />
+            </a>
+            <a class="logos" href="http://www.lisc.org/kansas-city/" target="_blank">
+                <img src="{{ site.baseurl }}/images/LISC_logo.png" width="200" />
+            </a>
+            <a class="logos" href="https://www.alt-cap.org/ccfindex/" target="_blank">
+                <img src="{{ site.baseurl }}/images/CCF_logo.jpg" width="200" />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $('#learnMoreLink').click(function () {
+        $('#learnDiv').toggle();
+    });
+
+</script>
+
