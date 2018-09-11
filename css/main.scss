@@ -1856,150 +1856,51 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	/* Tooltips */
-	[data-tooltip] {
-		display: inline-block;
-		position: relative;
-		cursor: help;
-		padding: 4px;
-	}
-	/* Tooltip styling */
-	[data-tooltip]:before {
-		content: attr(data-tooltip);
-		display: none;
-		position: absolute;
-		background: #000;
-		color: #fff;
-		padding: 4px 8px;
-		font-size: 14px;
-		line-height: 1.4;
-		min-width: 100px;
-		text-align: center;
-		border-radius: 4px;
-	}
-	/* Dynamic horizontal centering */
-	[data-tooltip-position="top"]:before,
-	[data-tooltip-position="bottom"]:before {
-		left: 50%;
-		-ms-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%);
-	}
-	/* Dynamic vertical centering */
-	[data-tooltip-position="right"]:before,
-	[data-tooltip-position="left"]:before {
-		top: 50%;
-		-ms-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-	[data-tooltip-position="top"]:before {
-		bottom: 100%;
-		margin-bottom: 6px;
-	}
-	[data-tooltip-position="right"]:before {
-		left: 100%;
-		margin-left: 6px;
-	}
-	[data-tooltip-position="bottom"]:before {
-		top: 100%;
-		margin-top: 6px;
-	}
-	[data-tooltip-position="left"]:before {
-		right: 100%;
-		margin-right: 6px;
-	}
 	
-	/* Tooltip arrow styling/placement */
-	[data-tooltip]:after {
-		content: '';
-		display: none;
+	.tooltipLeft .tooltiptext::after {
+		content: " ";
 		position: absolute;
-		width: 0;
-		height: 0;
-		border-color: transparent;
+		top: 50%;
+		right: 100%; /* To the left of the tooltip */
+		margin-top: -5px;
+		border-width: 5px;
 		border-style: solid;
+		border-color: transparent black transparent transparent;
 	}
-	/* Dynamic horizontal centering for the tooltip */
-	[data-tooltip-position="top"]:after,
-	[data-tooltip-position="bottom"]:after {
-		left: 50%;
-		margin-left: -6px;
-	}
-	/* Dynamic vertical centering for the tooltip */
-	[data-tooltip-position="right"]:after,
-	[data-tooltip-position="left"]:after {
-		top: 50%;
-		margin-top: -6px;
-	}
-	[data-tooltip-position="top"]:after {
-		bottom: 100%;
-		border-width: 6px 6px 0;
-		border-top-color: #000;
-	}
-	[data-tooltip-position="right"]:after {
-		left: 100%;
-		border-width: 6px 6px 6px 0;
-		border-right-color: #000;
-	}
-	[data-tooltip-position="bottom"]:after {
-		top: 100%;
-		border-width: 0 6px 6px;
-		border-bottom-color: #000;
-	}
-	[data-tooltip-position="left"]:after {
-		right: 100%;
-		border-width: 6px 0 6px 6px;
-		border-left-color: #000;
-	}
-	/* Show the tooltip when hovering */
-	[data-tooltip]:hover:before,
-	[data-tooltip]:hover:after {
-		display: block;
-		z-index: 50;
-	}
-
-	/* Block Text */
-
-	.block-with-text {
-		/* hide text if it more than N lines  */
-		overflow: hidden;
-		/* for set '...' in absolute position */
-		position: relative; 
-		/* use this value to count block height */
-		line-height: 1.2em;
-		/* max-height = line-height (1.2) * lines max number (3) */
-		max-height: 3.6em; 
-		/* fix problem when last visible word doesn't adjoin right side  */
-		text-align: justify;  
-		/* place for '...' */
-		margin-right: -1em;
-		padding-right: 1em;
-	  }
-	  /* create the ... */
-	  .block-with-text:before {
-		/* points in the end */
-		content: '...';
-		/* absolute position */
-		position: absolute;
-		/* set position to right bottom corner of block */
-		right: 0;
-		bottom: 0;
-	  }
-	  /* hide ... if we have text, which is less than or equal to max lines */
-	  .block-with-text:after {
-		/* points in the end */
-		content: '';
-		/* absolute position */
-		position: absolute;
-		/* set position to right bottom corner of text */
-		right: 0;
-		/* set width and height */
-		width: 1em;
-		height: 1em;
-		margin-top: 0.2em;
-		/* bg color = bg color under block */
-		background: white;
-	  }
 	
+	.tooltipTop .tooltiptext::after {
+		content: " ";
+		position: absolute;
+		bottom: 100%;  /* At the top of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent black transparent;
+	}
+
+	.tooltipBottom .tooltiptext::after {
+		content: " ";
+		position: absolute;
+		top: 100%; /* At the bottom of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: black transparent transparent transparent;
+	}
+
+	.tooltipRight .tooltiptext::after {
+		content: " ";
+		position: absolute;
+		top: 50%;
+		left: 100%; /* To the right of the tooltip */
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent transparent black;
+	}
+
+	.greenBtn {
+		background-color: #21b2a6;
+	}
