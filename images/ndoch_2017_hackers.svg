@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="43.127087mm"
+   height="43.127087mm"
+   viewBox="0 0 43.127087 43.127087"
+   version="1.1"
+   id="svg235"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="Badge_Hackers_Created by MRFA from the Noun Project.svg">
+  <defs
+     id="defs229" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="81.499968"
+     inkscape:cy="81.499987"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata232">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.2698,-127.26978)">
+    <circle
+       id="path3740-1"
+       cx="105.83334"
+       cy="148.83333"
+       style="display:inline;opacity:1;fill:#595759;fill-opacity:1;stroke-width:0.6619367"
+       r="21.563543" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.20000005;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.29398146"
+       x="106.52438"
+       y="160.37859"
+       id="text6885-3-2-7"><tspan
+         sodipodi:role="line"
+         x="106.52438"
+         y="160.37859"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7037034px;line-height:0;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-anchor:middle;fill:#e7e8e9;fill-opacity:1;stroke-width:0.29398146"
+         id="tspan6891-6-1-2">Hackers</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 96.886597,148.51172 v 0 -8.5497 -1.84791 c 0,-0.34496 0.3203,-0.61598 0.689889,-0.61598 h 16.557344 c 0.39422,0 0.71452,0.27102 0.71452,0.61598 v 1.18266 9.21495 l 2.26678,5.46983 v 0.0739 c 0,0.34495 -0.29567,0.64061 -0.66525,0.64061 H 95.285063 c -0.369577,5e-5 -0.665244,-0.29562 -0.665244,-0.64056 v -0.0739 z m 19.193713,5.34664 -1.99577,-4.80459 H 97.625764 l -1.995756,4.80459 z m -2.14359,-5.69159 v -9.83092 H 97.773597 v 9.83092 z"
+       id="path7918"
+       style="display:inline;opacity:1;fill:#e7e8e9;fill-opacity:1;stroke-width:0.24638902" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 110.78294,143.21435 c 0.14782,0.17247 0.14782,0.36959 0,0.5667 -0.61598,0.7638 -1.23195,1.52761 -1.84792,2.29141 -0.3203,0.39423 -0.86237,-0.14783 -0.5667,-0.56669 0.54207,-0.66525 1.05948,-1.35514 1.60153,-2.0204 -0.54205,-0.6406 -1.05946,-1.30585 -1.60153,-1.99574 -0.3203,-0.39422 0.2464,-0.96092 0.5667,-0.5667 0.61597,0.76381 1.23194,1.52762 1.84792,2.29142 z"
+       id="path7920"
+       style="display:inline;opacity:1;fill:#e7e8e9;fill-opacity:1;stroke-width:0.24638902" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 109.67419,152.50322 v 0.0739 c 0,0.29567 -0.27103,0.54205 -0.56669,0.54205 h -6.82499 c -0.3203,0 -0.56669,-0.24638 -0.56669,-0.54206 v -0.0739 h -0.0247 l 0.46814,-1.15801 c 0.0492,-0.2464 0.27103,-0.44351 0.56669,-0.44351 h 5.91335 c 0.29566,0 0.51741,0.19711 0.5667,0.44351 z m -0.7638,-0.0492 -0.34496,-0.86237 h -5.7655 l -0.34494,0.86237 z"
+       id="path7922"
+       style="display:inline;opacity:1;fill:#e7e8e9;fill-opacity:1;stroke-width:0.24638902" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 106.7668,141.04613 c 0.24639,-0.4435 0.91163,-0.0492 0.68989,0.39422 -0.78845,1.52761 -1.60154,3.05522 -2.41461,4.58284 -0.24639,0.46814 -0.93628,0.0492 -0.6899,-0.39423 0.78845,-1.52761 1.60154,-3.05522 2.41462,-4.58283 z"
+       id="path7924"
+       style="display:inline;opacity:1;fill:#e7e8e9;fill-opacity:1;stroke-width:0.24638902" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 103.48982,145.53041 c 0.32031,0.39422 -0.24639,0.96092 -0.56669,0.5667 -0.64062,-0.81309 -1.25659,-1.57689 -1.84792,-2.31606 -0.14783,-0.17248 -0.14783,-0.36959 0,-0.5667 0.61597,-0.7638 1.23194,-1.52761 1.84792,-2.29142 0.3203,-0.39422 0.86236,0.14784 0.56669,0.5667 -0.54206,0.66526 -1.05947,1.35514 -1.60153,2.02039 0.54206,0.66525 1.05947,1.35514 1.60153,2.02039 z"
+       id="path7926"
+       style="display:inline;opacity:1;fill:#e7e8e9;fill-opacity:1;stroke-width:0.24638902" />
+  </g>
+</svg>

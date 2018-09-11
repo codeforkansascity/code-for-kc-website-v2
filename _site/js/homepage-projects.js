@@ -46,9 +46,11 @@ Tabletop.init({                                             // Requires js/table
 
             var row = '';
             
+            
             row += ' <div class="inner">';
-            row += '    <ul class="features col-sm-8">';
-            row += '        <li>';
+            row +- '    <div id="float"';
+            row += '    <ul class="features">';
+            row += '        <li class="fit major">';
             row += '            <h3>' + worksheetRow["Title"] + '</h3>';
             row += '            <p>' + converter.makeHtml(worksheetRow['Card-Description']) + '</p>';
             row += '            <p>'
@@ -69,7 +71,9 @@ Tabletop.init({                                             // Requires js/table
             row += '            </p>';
             row += '        </li>';
             row += '    </ul>';
-            row += '</div>'
+            row +- '    </div>'
+            row += '</div>';
+            
 
 
 
