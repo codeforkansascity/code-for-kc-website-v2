@@ -824,3 +824,5 @@ body.is-mobile.landing #footer { background-color: #1d242a; }
 .tooltipRight .tooltiptext::after { content: " "; position: absolute; top: 50%; left: 100%; /* To the right of the tooltip */ margin-top: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent transparent black; }
 
 .greenBtn { background-color: #21b2a6; }
+
+#below-icons-index { margin-top: -30px; margin: 40px; }
